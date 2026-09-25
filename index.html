@@ -1,10 +1,97 @@
-<HTML>
-  <BODY>
-    671510xxx <BR />
-    671510yyy <BR />
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CMUBS — คณะบริหารธุรกิจ มหาวิทยาลัยเชียงใหม่ (หน้าสาธิต)</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--tq:#2A9D9F;--tq-deep:#1B6F71;--purple:#5B3F8F;--ink:#22303A;--muted:#66727C;--bg:#F5F9FA;--white:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Sarabun",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{background:var(--white);border-bottom:4px solid var(--tq)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--tq-deep);text-decoration:none}
+  .brand .mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--purple),var(--tq));color:#fff;display:grid;place-items:center;font-size:.8rem;letter-spacing:.05em}
+  .brand small{display:block;font-weight:400;color:var(--muted);font-size:.8rem}
+  nav a{margin-left:18px;color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+  nav a:hover{color:var(--tq)}
+  @media(max-width:700px){nav{display:none}}
+  .hero{background:linear-gradient(120deg,var(--tq-deep),var(--tq) 60%,#7FD1C8);color:#fff;padding:64px 0}
+  .hero h1{margin:0 0 .3em;font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.25}
+  .hero p{max-width:640px;font-size:1.1rem;margin:0 0 1.2em;opacity:.95}
+  .badge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:4px 14px;font-size:.85rem;margin-bottom:14px}
+  .btn{display:inline-block;background:#fff;color:var(--tq-deep);font-weight:700;padding:12px 22px;border-radius:999px;text-decoration:none}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:40px 0}
+  .card{background:var(--white);border-radius:12px;padding:20px;box-shadow:0 4px 18px rgba(34,48,58,.08);border-top:4px solid var(--tq)}
+  .card h3{margin:0 0 .3em;font-size:1.05rem;color:var(--tq-deep)}
+  .card p{margin:0;font-size:.95rem;color:var(--muted)}
+  .chat{padding:0 0 56px}
+  .chat h2{color:var(--tq-deep);margin:0 0 .3em}
+  .chat .lead{color:var(--muted);margin:0 0 18px}
+  .chatbox{background:var(--white);border-radius:14px;box-shadow:0 6px 24px rgba(34,48,58,.10);overflow:hidden;border:1px solid #E1EAEC}
+  .chatbox iframe{width:100%;height:600px;border:0;display:block}
+  .placeholder{height:600px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px}
+  .placeholder code{background:#EEF4F5;padding:2px 8px;border-radius:6px;color:var(--purple)}
+  footer{background:var(--ink);color:rgba(255,255,255,.8);padding:28px 0;font-size:.9rem}
+  footer b{color:#fff}
+</style>
+</head>
+<body>
 
-    <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="AdtDoer6ZrLd7s1-ChP0L";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+<header>
+  <div class="wrap">
+    <a class="brand" href="#"><span class="mark">CMUBS</span><span>คณะบริหารธุรกิจ<small>มหาวิทยาลัยเชียงใหม่ · หน้าสาธิต</small></span></a>
+    <nav><a href="#">สมัครเรียน</a><a href="#">หลักสูตร</a><a href="#">เกี่ยวกับเรา</a><a href="#chat">ถามน้องแอคบา</a></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">AACSB Accredited · 1 ใน 8 สถาบันของประเทศไทย</span>
+    <h1>Chiang Mai University Business School</h1>
+    <p>สร้างผู้ประกอบการและนักธุรกิจที่มีคุณธรรม ด้วยหลักสูตรปริญญาตรี โท และเอกที่ได้รับการรับรองมาตรฐานสากล</p>
+    <a class="btn" href="#chat">ถามข้อมูลหลักสูตรกับผู้ช่วย AI</a>
+  </div>
+</section>
+
+<div class="wrap cards">
+  <div class="card"><h3>ปริญญาตรี</h3><p>บัญชีบัณฑิต (ไทย/นานาชาติ) · บริหารธุรกิจบัณฑิต การเงินและการธนาคาร การจัดการ การตลาด และการจัดการธุรกิจบริการ</p></div>
+  <div class="card"><h3>ปริญญาโท</h3><p>M.B.A. · Ex-M.B.A. · M.B.A. Marketing · M.Sc. Finance</p></div>
+  <div class="card"><h3>ปริญญาเอก</h3><p>Ph.D. in Business Administration</p></div>
+  <div class="card"><h3>ติดต่อคณะ</h3><p>239 ถนนห้วยแก้ว ต.สุเทพ อ.เมือง เชียงใหม่ 50200<br>โทร 0 5394 2105 · cmubs@cmu.ac.th</p></div>
+</div>
+
+<section class="chat" id="chat">
+  <div class="wrap">
+    <h2>ถามน้องแอคบา — ผู้ช่วย AI ของคณะ</h2>
+    <p class="lead">ตอบคำถามเรื่องหลักสูตร ค่าธรรมเนียม การสมัคร ทุน และการติดต่อ จากเอกสารของคณะเท่านั้น หากไม่มีข้อมูลจะแนะนำช่องทางติดต่อเจ้าหน้าที่</p>
+    <div class="chatbox">
+      <!-- วิธีฝัง : ใน Chatbase ไปที่ Deploy > Embed แล้วคัดลอก iframe มาแทนบล็อก placeholder ด้านล่าง
+           หรือแก้ CHATBOT_ID ในสคริปต์ท้ายหน้าเป็น id ของผู้ช่วย -->
+      <div class="placeholder" id="ph">
+        <div>
+          <p><b>ยังไม่ได้เชื่อมผู้ช่วย</b></p>
+          <p>แก้ค่า <code>CHATBOT_ID</code> ท้ายไฟล์นี้เป็น id จากหน้า Deploy ของ Chatbase<br>หรือวาง iframe ที่คัดลอกจาก Chatbase แทนกล่องนี้</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><b>หน้าสาธิตประกอบการเรียนวิชา 703311</b> — ไม่ใช่เว็บไซต์ทางการของคณะ ข้อมูลจริงที่ www.cmubs.cmu.ac.th</div>
+</footer>
+
+<script>
+  var CHATBOT_ID = "";   // ใส่ id ของผู้ช่วยจาก Chatbase เช่น "abc123XYZ"
+  if (CHATBOT_ID) {
+    var f = document.createElement("iframe");
+    f.src = "https://www.chatbase.co/chatbot-iframe/" + CHATBOT_ID;
+    f.title = "น้องแอคบา";
+    document.getElementById("ph").replaceWith(f);
+  }
 </script>
-  </BODY>
-</HTML>
+</body>
+</html>
